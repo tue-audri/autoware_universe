@@ -4,7 +4,7 @@
     object_length_threshold: 0.05
     max_rings_num: 128
     max_points_num_per_ring: 4000
-    publish_outlier_pointcloud: false
+    publish_outlier_pointcloud: true
     min_azimuth_deg: 0.0
     max_azimuth_deg: 360.0
     max_distance: 12.0
