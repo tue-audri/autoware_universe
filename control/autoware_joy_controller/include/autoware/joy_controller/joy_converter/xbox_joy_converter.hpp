@@ -53,26 +53,49 @@ public:
   bool vehicle_disengage() const { return RStickButton(); }
 
 private:
+  // float LStickLeftRight() const { return j_.axes.at(0); }
+  // float LStickUpDown() const { return j_.axes.at(1); }
+  // float RStickLeftRight() const { return j_.axes.at(2); }
+  // float RStickUpDown() const { return j_.axes.at(3); }
+  // float RT() const { return j_.axes.at(4); }
+  // float LT() const { return j_.axes.at(5); }
+  // float CursorLeftRight() const { return j_.axes.at(6); }
+  // float CursorUpDown() const { return j_.axes.at(7); }
+
+  // bool A() const { return j_.buttons.at(0); }
+  // bool B() const { return j_.buttons.at(1); }
+  // bool X() const { return j_.buttons.at(3); }
+  // bool Y() const { return j_.buttons.at(4); }
+  // bool LB() const { return j_.buttons.at(6); }
+  // bool RB() const { return j_.buttons.at(7); }
+  // bool Menu() const { return j_.buttons.at(11); }
+  // bool LStickButton() const { return j_.buttons.at(13); }
+  // bool RStickButton() const { return j_.buttons.at(14); }
+  // bool ChangeView() const { return j_.buttons.at(15); }
+  // bool Xbox() const { return j_.buttons.at(16); }
+
+  // Mapping for Logitech Gamepad F310
+
   float LStickLeftRight() const { return j_.axes.at(0); }
   float LStickUpDown() const { return j_.axes.at(1); }
-  float RStickLeftRight() const { return j_.axes.at(2); }
-  float RStickUpDown() const { return j_.axes.at(3); }
-  float RT() const { return j_.axes.at(4); }
-  float LT() const { return j_.axes.at(5); }
+  float RStickLeftRight() const { return j_.axes.at(3); }
+  float RStickUpDown() const { return j_.axes.at(4); }
+  float RT() const { return j_.axes.at(5); }
+  float LT() const { return j_.axes.at(2); }
   float CursorLeftRight() const { return j_.axes.at(6); }
   float CursorUpDown() const { return j_.axes.at(7); }
 
   bool A() const { return j_.buttons.at(0); }
   bool B() const { return j_.buttons.at(1); }
-  bool X() const { return j_.buttons.at(3); }
-  bool Y() const { return j_.buttons.at(4); }
-  bool LB() const { return j_.buttons.at(6); }
-  bool RB() const { return j_.buttons.at(7); }
-  bool Menu() const { return j_.buttons.at(11); }
-  bool LStickButton() const { return j_.buttons.at(13); }
-  bool RStickButton() const { return j_.buttons.at(14); }
-  bool ChangeView() const { return j_.buttons.at(15); }
-  bool Xbox() const { return j_.buttons.at(16); }
+  bool X() const { return j_.buttons.at(2); }
+  bool Y() const { return j_.buttons.at(3); }
+  bool LB() const { return j_.buttons.at(4); }
+  bool RB() const { return j_.buttons.at(5); }
+  bool Menu() const { return j_.buttons.at(7); }
+  bool LStickButton() const { return j_.buttons.at(9); }
+  bool RStickButton() const { return j_.buttons.at(10); }
+  bool ChangeView() const { return j_.buttons.at(6); }
+  bool Xbox() const { return j_.buttons.at(8); }
 
   const sensor_msgs::msg::Joy j_;
 };
