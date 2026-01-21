@@ -51,7 +51,7 @@
     <!-- convert DynamicObjectsWithFeatureArray to DynamicObjects -->
     <include file="$(find-pkg-share autoware_detected_object_feature_remover)/launch/detected_object_feature_remover.launch.xml">
       <arg name="input" value="/perception/object_recognition/detection/objects_with_feature"/>
-      <arg name="output" value="/perception/object_recognition/detection/objects"/>
+      <arg name="output" value="/perception/object_recognition/detection/dummy_objects"/>
     </include>
   </group>
 </launch>
