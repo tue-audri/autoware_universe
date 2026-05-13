@@ -13,7 +13,7 @@
       <remap from="input/predicted_objects" to="/perception/object_recognition/objects"/>
       <remap from="output/dynamic_object" to="/perception/object_recognition/detection/objects"/>
       <remap from="output/objects_pose" to="debug/object_pose"/>
-      <remap from="output/points_raw" to="/perception/obstacle_segmentation/pointcloud"/>
+      <remap from="output/points_raw" to="/perception/obstacle_segmentation/pointcloud/disabled"/>
       <param from="$(var dummy_perception_publisher_config_file)"/>
       <param name="visible_range" value="$(var visible_range)"/>
       <param name="detection_successful_rate" value="1.0"/>
