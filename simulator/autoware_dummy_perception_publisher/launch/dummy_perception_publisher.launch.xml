@@ -11,7 +11,7 @@
       <remap from="input/object" to="dummy_perception_publisher/object_info"/>
       <remap from="input/reset" to="input/reset"/>
       <remap from="input/predicted_objects" to="/perception/object_recognition/objects"/>
-      <remap from="output/dynamic_object" to="/perception/object_recognition/detection/objects"/>
+      <remap from="output/dynamic_object" to="/perception/object_recognition/detection/dummy_objects"/> # Should check the topic name later for planning simulator or real deployment
       <remap from="output/objects_pose" to="debug/object_pose"/>
       <remap from="output/points_raw" to="/perception/obstacle_segmentation/pointcloud/disabled"/>
       <param from="$(var dummy_perception_publisher_config_file)"/>
